@@ -1,0 +1,279 @@
+{
+    "about": {
+        "intro": "*Web yazılımları* geliştiriyor, **AgencyGrow**'u yönetiyor ve *hacim profili* yapılarını işlemeliyorum.",
+        "description": "Kod, reklam yönetimi ve swing trading aynı kurala dayanır: küçük test et, her şeyi ölç ve işlemeyeni kes. **React ve Python** uygulamaları geliştiriyor, AgencyGrow'da **2–5x ROI** sağlıyor ve *hacim profili* ile işlem açıyorum.",
+        "full": "Ben **Mohd. Faiz Alam**; yazılım geliştirici, swing trader ve **AgencyGrow** kurucusuyum. Ön yüzde *React*, *Next.js*, *TypeScript*, *Framer* ve *Bootstrap*, arka planda *Node.js*, *Python*, *C* ve *MySQL* kullanarak *Figma* tasarımlarını *GitHub* ve *Vercel* üzerinden yayına alıyorum.\n\nPiyasalarda tahmine değil, **volume profile** (hacim profili) ve **structure** verilerine dayalı swing işlemler yapıyorum. Gerçek katılımın nerede toplandığını görmek için *POC*, *value area high/low* ve *high/low volume nodes* bölgelerini haritalandırıyor, fiyatın *swing highs/lows* ötesindeki *liquidity pools* alanlarına tepkisini izliyorum.\n\nYalnızca seviye korunduğunda **entries only on confirmation** kuralıyla işleme giriyorum. Her işlemin önceden belirlenmiş bir *invalidation level* noktası, hesaplanmış *position sizing* oranı ve sabit *risk per trade* sınırı vardır. Sıkı *drawdown* kuralları ve düzenli *journaling* süreci mekanik tutar.\n\n**AgencyGrow** çatısı altında aynı bütçe disiplini ve net dönüşüm takibiyle uçtan uca *Google ve Meta* reklam kampanyaları yönetiyor, müşteri hesaplarında istikrarlı **2–5x ROI** sağlıyorum."
+    },
+    "manifesto": [
+        "RADICAL TRANSPARENCY",
+        "INTENTIONAL MINIMALISM",
+        "ARCHITECTURAL INTEGRITY",
+        "FIRST PRINCIPLES THINKING",
+        "PERFORMANCE WITHOUT COMPROMISE",
+        "SCALABLE VISION"
+    ],
+    "pillars": [
+        {
+            "id": "systems-engineering",
+            "index": "01",
+            "subsystem": "01 / Kod",
+            "title": "Systems Engineering",
+            "subtitle": "Yazılım Mimarisi",
+            "description": "**Next.js**, **TypeScript** ve **Python FastAPI** ile dayanıklı web uygulamaları ve kantitatif simülasyonlar geliştiriyorum.",
+            "metrics": [
+                {
+                    "label": "Temel Yığın",
+                    "value": "React · Next.js · Python"
+                },
+                {
+                    "label": "Odak",
+                    "value": "Mimari Bütünlük"
+                },
+                {
+                    "label": "Simülasyonlar",
+                    "value": "BB84 Quantum · RL Env"
+                },
+                {
+                    "label": "Akademik",
+                    "value": "Bilgisayar Mühendisliği"
+                }
+            ],
+            "facets": [
+                {
+                    "id": "frontend-architecture",
+                    "label": "Arayüz",
+                    "summary": "Sıfır düzen kaymalı App Router mimarisi, yay fiziği koreografisi ve özel 2B kanvas motorları.",
+                    "proof": "Nuvora ve etkileşimli portfolyo sistemlerinde kullanımda"
+                },
+                {
+                    "id": "simulation-backends",
+                    "label": "Simülasyonlar",
+                    "summary": "Kuantum dinleme oranlarını (QBER) ve RL bölümlerini gerçek zamanlı hesaplayan Python & FastAPI servisleri.",
+                    "proof": "BB84 Quantum ve RL Trading Env altyapısı"
+                },
+                {
+                    "id": "systems-foundations",
+                    "label": "Sistem & Veri",
+                    "summary": "C ile düşük seviyeli bellek yönetimi, MySQL veri modelleme ve uçtan uca TypeScript şemaları.",
+                    "proof": "Deterministik çalışma için tasarlandı"
+                }
+            ],
+            "tags": [
+                "Next.js",
+                "TypeScript",
+                "Python",
+                "FastAPI"
+            ]
+        },
+        {
+            "id": "market-mechanics",
+            "index": "02",
+            "subsystem": "02 / Sermaye",
+            "title": "Market Mechanics",
+            "subtitle": "Swing Trading & Yapı",
+            "description": "**Fiyat hareketi** ve **Hacim Profili (Volume Profile)** ile piyasa yapısını çözümlüyor, kantitatif RL ortamları geliştiriyorum.",
+            "metrics": [
+                {
+                    "label": "Metodoloji",
+                    "value": "Volume Profile · Price Action"
+                },
+                {
+                    "label": "Ana Bölgeler",
+                    "value": "POC · VAH · VAL · HVN"
+                },
+                {
+                    "label": "Kantitatif",
+                    "value": "Gymnasium PPO Ajanları"
+                },
+                {
+                    "label": "Disiplin",
+                    "value": "Onaylı Giriş & Sabit Risk"
+                }
+            ],
+            "facets": [
+                {
+                    "id": "volume-profile",
+                    "label": "Hacim Profili",
+                    "summary": "Kurumsal katılımın yoğunlaştığı POC, değer alanı sınırları ve düşük hacimli düğümlerin analizi.",
+                    "proof": "Yapısal onaya dayalı mekanik swing kurulumları"
+                },
+                {
+                    "id": "liquidity-structure",
+                    "label": "Likidite & Risk",
+                    "summary": "Önceden belirlenmiş geçersizlik seviyeleri ve sabit pozisyon büyüklüğü ile likidite takibi.",
+                    "proof": "Sıkı düşüş (drawdown) kuralları ile mekanik işlem"
+                },
+                {
+                    "id": "rl-workbench",
+                    "label": "RL Çalışma Alanı",
+                    "summary": "Risk duyarlı ödül fonksiyonu ile OHLCV verileri üzerinde otonom PPO ajanları eğiten Gymnasium ortamı.",
+                    "proof": "Canlı özsermaye eğrisi ve işlem telemetrisi"
+                }
+            ],
+            "tags": [
+                "Volume Profile",
+                "Price Action",
+                "POC / VAH / VAL",
+                "Gymnasium PPO"
+            ]
+        },
+        {
+            "id": "growth-advertising",
+            "index": "03",
+            "subsystem": "03 / Dikkat",
+            "title": "Growth & Advertising",
+            "subtitle": "AgencyGrow · Reklam Yönetimi",
+            "description": "**AgencyGrow** kurucusu olarak hassas *GA4 dönüşüm takibi* ve bütçe disiplinine dayalı **Google & Meta** kampanyaları yönetiyorum.",
+            "metrics": [
+                {
+                    "label": "Girişim",
+                    "value": "AgencyGrow · Nuvora"
+                },
+                {
+                    "label": "Platformlar",
+                    "value": "Google Ads · Meta · GA4"
+                },
+                {
+                    "label": "Erişim",
+                    "value": "89B+ Kullanıcı · 1.3M Olay"
+                },
+                {
+                    "label": "Etkileşim",
+                    "value": "6dk 44sn Ort. Süre"
+                }
+            ],
+            "facets": [
+                {
+                    "id": "search-intent",
+                    "label": "Kampanyalar",
+                    "summary": "Yüksek niyetli Google Arama ve Meta kampanyalarında negatif kelime hijyeni ve CPL optimizasyonu.",
+                    "proof": "Müşteri hesaplarında istikrarlı 2–5x ROI disiplini"
+                },
+                {
+                    "id": "telemetry-analytics",
+                    "label": "GA4 Analitik",
+                    "summary": "1.3 milyondan fazla etkileşimi ve gerçek zamanlı dönüşüm yollarını izleyen GA4 veri hatları.",
+                    "proof": "28 günde 89B aktif ve 80B yeni kullanıcı analizi"
+                },
+                {
+                    "id": "conversion-design",
+                    "label": "Dönüşüm Vitrini",
+                    "summary": "Reklam trafiğini soğuk ziyaretçileri görüşmelere dönüştüren hızlı Nuvora sayfalarıyla birleştirme.",
+                    "proof": "Sıfır düzen kayması ve net hizmet konumlandırması"
+                }
+            ],
+            "tags": [
+                "AgencyGrow",
+                "Google Ads",
+                "Meta Ads",
+                "GA4 Analitik"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "title": "BB84 Quantum",
+            "category": "Kuantum Simülasyonu",
+            "year": "2026",
+            "description": "Kuantum fiziğinin anahtar değişimini nasıl güvenceye aldığını ve dinleyicileri nasıl yakaladığını gösteren etkileşimli bir **BB84 Kuantum Anahtar Dağıtımı** simülatörü. Kullanıcılar durum hazırlama, taban seçimi, anahtar eleme ve *One-Time Pad* şifreleme adımlarını gerçek zamanlı inceler.\n\n*React* ve *TypeScript* arayüzü ile *Python FastAPI* motoru üzerine kurulu sistem, üçüncü bir taraf kanalı ölçtüğü anda müdahaleyi yakalamak için **Kuantum Bit Hata Oranını (QBER)** hesaplar.",
+            "image": "/projects/20260427093247885.jpg",
+            "repo": "https://github.com/MohammadFaizAlam/faiz-quantum-communication",
+            "stack": [
+                "React",
+                "TypeScript",
+                "Python",
+                "FastAPI",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Nuvora",
+            "category": "Girişim",
+            "year": "2026",
+            "description": "Nuvora, kreatif ve reklam girişimimin dijital vitrini ve müşteri kazanım platformudur. Soğuk trafiği planlanmış görüşmelere dönüştürmek için tasarlanan platform, güçlü tipografiyi etkileşimli vaka analizleri ve net hizmet konumlandırmasıyla birleştirir.\n\n*Next.js*, *React* ve *TypeScript* ile geliştirilen arayüz; sıfır düzen kayması ve yüksek sayfa hızıyla tüm cihazlarda akıcı kaydırma koreografisi sunmak için *Framer Motion*, *GSAP* ve *Locomotive Scroll* kullanır.",
+            "image": "/projects/20260427093247620.jpg",
+            "demo": "https://nuvora-media.vercel.app/",
+            "repo": "https://github.com/MohammadFaizAlam/Nuvora",
+            "stack": [
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Framer",
+                "GSAP"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "RL Trading Env",
+            "category": "Web Uygulaması",
+            "year": "2026",
+            "description": "RL Trading Env, otonom işlem ajanlarını geçmiş ve sentetik *OHLCV* piyasa verileri üzerinde eğitmek ve test etmek için geliştirilmiş kapsamlı bir pekiştirmeli öğrenme çalışma alanıdır. Özel *Gymnasium* ortamı, yalnızca ham getiriyi optimize etmek yerine derin düşüşleri ve düzensiz pozisyon büyüklüğünü cezalandıran risk duyarlı bir ödül fonksiyonu kullanır.\n\n*Python* ve *FastAPI* arka ucu **Proximal Policy Optimization (PPO)** bölümlerini çalıştırır ve sonuçları canlı fiyat grafikleri, özsermaye eğrileri ve işlem tabloları içeren *React* ve *TypeScript* paneline aktarır.",
+            "image": "/projects/20260305210513749.jpg",
+            "repo": "https://github.com/MohammadFaizAlam/rl-trading-env",
+            "stack": [
+                "Python",
+                "FastAPI",
+                "React",
+                "TypeScript",
+                "Gymnasium"
+            ]
+        }
+    ],
+    "roadmap": [
+        {
+            "id": "01",
+            "year": "2022",
+            "description": "Kendi başıma HTML, CSS ve JavaScript yazmaya başladım. İlk tasarımlarım her ekran boyutunda bozuluyordu; DOM mantığı oturana kadar geceleri tarayıcı konsolunda çalıştım.",
+            "stack": [
+                "HTML5",
+                "CSS3",
+                "JavaScript"
+            ]
+        },
+        {
+            "id": "02",
+            "year": "2023",
+            "description": "Reklam ajansım AgencyGrow'u kurarak müşteriler için Google ve Meta kampanyaları yönetmeye başladım. Aynı dönemde piyasa yapısı ve swing trading üzerine çalışmaya başladım.",
+            "stack": [
+                "AgencyGrow",
+                "Google Ads",
+                "Meta Ads",
+                "Trading"
+            ]
+        },
+        {
+            "id": "03",
+            "year": "2024",
+            "description": "Raigad Military School'da CBSE müfredatıyla SSC (10. sınıf) eğitimimi tamamladım. O yılı sınav hazırlığını kodlama projeleri ve ilk müşteri reklam kampanyalarıyla dengeleyerek geçirdim.",
+            "stack": [
+                "SSC (10th)",
+                "CBSE",
+                "Raigad Military School"
+            ]
+        },
+        {
+            "id": "04",
+            "year": "2026",
+            "description": "Andheri'deki Rajhans Vidyalaya'da CBSE HSC (12. sınıf) eğitimimi tamamladım. Sınav hazırlığını AgencyGrow müşteri hesapları, canlı piyasa seansları ve React, Next.js ve Python ile geliştirdiğim web uygulamalarıyla birlikte yürüttüm.",
+            "stack": [
+                "HSC (12th)",
+                "CBSE",
+                "Rajhans Vidyalaya",
+                "Next.js"
+            ]
+        },
+        {
+            "id": "05",
+            "year": "Currently",
+            "description": "Shree L.R. Tiwari Mühendislik Fakültesi'nde Bilgisayar Mühendisliği 1. sınıf öğrencisiyim. Temel mühendislik ve C programlama üzerine çalışırken web projeleri geliştiriyor, AgencyGrow kampanyalarını ve swing işlemlerimi sürdürüyorum.",
+            "stack": [
+                "B.E. Comp Eng",
+                "C",
+                "React",
+                "AgencyGrow"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "contact": {
+        "location": "Konya, Türkiye",
+        "email": "faizalam1101@gmail.com",
+        "phone": "91+ 8591673478"
+    },
+    "social": [
+        {
+            "label": "GitHub",
+            "href": "https://github.com/MohammadFaizAlam"
+        },
+        {
+            "label": "Discord",
+            "href": "https://discord.gg"
+        },
+        {
+            "label": "Instagram",
+            "href": "https://instagram.com/faizzz_404"
+        },
+        {
+            "label": "Linkedin",
+            "href": "https://www.linkedin.com/"
+        }
+    ],
+    "stack": {
+        "frontend": [
+            {
+                "name": "React",
+                "icon": "/stack/react.svg",
+                "featured": true
+            },
+            {
+                "name": "Next.js",
+                "icon": "/stack/nextjs.svg",
+                "featured": true
+            },
+            {
+                "name": "Tailwind CSS",
+                "icon": "/stack/tailwindcss.svg",
+                "featured": true
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "/stack/bootstrap.svg"
+            },
+            {
+                "name": "Framer Motion",
+                "icon": "/stack/framermotion.svg"
+            },
+            {
+                "name": "TypeScript",
+                "icon": "/stack/typescript.svg"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "/stack/javascript.svg"
+            },
+            {
+                "name": "HTML5",
+                "icon": "/stack/html5.svg"
+            },
+            {
+                "name": "CSS3",
+                "icon": "/stack/css3.svg"
+            }
+        ],
+        "backend": [
+            {
+                "name": "Node.js",
+                "icon": "/stack/nodejs.svg"
+            },
+            {
+                "name": "C",
+                "icon": "/stack/c.svg"
+            },
+            {
+                "name": "Python",
+                "icon": "/stack/python.svg"
+            }
+        ],
+        "database": [
+            {
+                "name": "MySQL",
+                "icon": "/stack/mysql.svg",
+                "featured": true
+            }
+        ],
+        "tools": [
+            {
+                "name": "Git",
+                "icon": "/stack/git.svg"
+            },
+            {
+                "name": "Vercel",
+                "icon": "/stack/vercel.svg"
+            },
+            {
+                "name": "Github",
+                "icon": "/stack/github.svg"
+            },
+                        {
+                "name": "Figma",
+                "icon": "/stack/figma.svg"
+            }
+        ]
+    }
+}
+
