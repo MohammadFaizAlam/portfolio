@@ -118,16 +118,16 @@ export default function Stack() {
             <div className="h-full flex flex-col px-container container mx-auto relative z-10">
                 <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12 lg:mb-16">
                     <div className="flex flex-col gap-4">
-                        <BlurReveal>
+                        <BlurReveal delay={0} yOffset={16}>
                             <span className="title-counter">[003]</span>
                         </BlurReveal>
 
-                        <BlurReveal>
+                        <BlurReveal delay={0.07} yOffset={24}>
                             <h2 className="title">{dict.title.stack}</h2>
                         </BlurReveal>
                     </div>
 
-                    <BlurReveal>
+                    <BlurReveal delay={0.14} yOffset={20}>
                         <p className="text-sm sm:text-base text-muted-foreground font-light max-w-md">
                             {dict.stackIntro}
                         </p>
@@ -135,12 +135,16 @@ export default function Stack() {
                 </div>
 
                 {/* Interactive Category Spotlight Surface */}
-                <div
+                <motion.div
                     ref={spotlightContainerRef}
+                    initial={prefersReducedMotion ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 28, scale: 0.99 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    viewport={{ once: true, amount: 0.08, margin: "0px 0px 100px 0px" }}
+                    transition={{ duration: 0.64, ease: [0.22, 1, 0.36, 1] }}
                     onPointerEnter={handlePointerEnter}
                     onPointerMove={handlePointerMove}
                     onPointerLeave={handlePointerLeave}
-                    className="relative rounded-3xl border border-border/50 bg-secondary/[0.03] backdrop-blur-sm p-6 sm:p-10 lg:p-12 overflow-hidden"
+                    className="relative rounded-3xl border border-border/50 bg-secondary/[0.03] backdrop-blur-sm p-6 sm:p-10 lg:p-12 overflow-hidden transform-gpu"
                 >
                     {/* Subtle Cursor-Following Radial Spotlight */}
                     {!prefersReducedMotion && (
@@ -150,7 +154,7 @@ export default function Stack() {
                                 background: spotlightBackground,
                                 opacity: isPointerInside ? 0.035 : 0,
                             }}
-                            className="pointer-events-none absolute inset-0 transition-opacity duration-500 z-0"
+                            className="max-xl:hidden pointer-events-none absolute inset-0 transition-opacity duration-500 z-0"
                         />
                     )}
 
@@ -206,7 +210,7 @@ export default function Stack() {
                         {categories.map((category, catIndex) => {
                             const isCategoryActive = activeCategoryTitle === category.title;
                             return (
-                                <BlurReveal key={category.id}>
+                                <BlurReveal key={category.id} delay={catIndex * 0.06} yOffset={18}>
                                     <div className="border-b border-border/40 pb-8 last:border-b-0 last:pb-0">
                                         <div className="flex items-center gap-3 mb-5">
                                             <span className="text-[10px] font-mono tracking-widest text-muted-foreground/50 tabular-nums">
@@ -268,10 +272,10 @@ export default function Stack() {
                                                                             prefersReducedMotion
                                                                                 ? { duration: 0 }
                                                                                 : {
-                                                                                      type: "spring",
-                                                                                      stiffness: 380,
-                                                                                      damping: 30,
-                                                                                  }
+                                                                                    type: "spring",
+                                                                                    stiffness: 380,
+                                                                                    damping: 30,
+                                                                                }
                                                                         }
                                                                         className="absolute inset-0 rounded-xl border border-foreground/20 bg-secondary/60 dark:bg-secondary/40 shadow-sm -z-0"
                                                                     />
@@ -282,7 +286,7 @@ export default function Stack() {
                                                                         "relative z-10 transition-all duration-300 ease-out",
                                                                         isSelected
                                                                             ? "opacity-100 grayscale-0 scale-105"
-                                                                            : "opacity-55 grayscale group-hover:grayscale-0 group-hover:opacity-100"
+                                                                            : "opacity-55 grayscale xl:group-hover:grayscale-0 xl:group-hover:opacity-100"
                                                                     )}
                                                                 >
                                                                     <Image
@@ -300,7 +304,7 @@ export default function Stack() {
                                                                         "relative z-10 text-sm tracking-wide transition-colors duration-300 whitespace-nowrap",
                                                                         isSelected
                                                                             ? "text-foreground font-medium"
-                                                                            : "text-muted-foreground group-hover:text-foreground"
+                                                                            : "text-muted-foreground xl:group-hover:text-foreground"
                                                                     )}
                                                                 >
                                                                     {item.name}
@@ -311,7 +315,7 @@ export default function Stack() {
                                                         <HoverCardContent
                                                             side="top"
                                                             align="center"
-                                                            className="w-80 p-5 flex flex-col gap-4 bg-background/95 backdrop-blur-xl border border-border/60 shadow-2xl rounded-2xl overflow-hidden"
+                                                            className="max-xl:hidden w-80 p-5 flex flex-col gap-4 bg-background/95 backdrop-blur-xl border border-border/60 shadow-2xl rounded-2xl overflow-hidden"
                                                         >
                                                             <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/50 to-transparent" />
                                                             <div className="absolute inset-0 bg-linear-to-tr from-foreground/[0.03] to-transparent pointer-events-none" />
@@ -355,7 +359,7 @@ export default function Stack() {
                             );
                         })}
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

@@ -18,19 +18,23 @@ test("getPillarVisualVariant maps each pillar to its architectural dark-glass ca
     assert.equal(getPillarVisualVariant("custom-id", 1), "volume");
 });
 
-test("getFluidShaderConfig returns distinct, bounded parameters for hero, about, stack, projects, roadmap, and contact", () => {
+test("getFluidShaderConfig returns distinct, bounded parameters for hero, about, pillars, stack, projects, roadmap, and contact", () => {
     const heroCfg = getFluidShaderConfig("hero");
     const aboutCfg = getFluidShaderConfig("about");
+    const pillarsCfg = getFluidShaderConfig("pillars");
     const stackCfg = getFluidShaderConfig("stack");
     const projectsCfg = getFluidShaderConfig("projects");
     const roadmapCfg = getFluidShaderConfig("roadmap");
     const contactCfg = getFluidShaderConfig("contact");
 
     assert.notEqual(heroCfg.seed, aboutCfg.seed);
+    assert.notEqual(aboutCfg.seed, pillarsCfg.seed);
+    assert.notEqual(pillarsCfg.seed, stackCfg.seed);
     assert.notEqual(stackCfg.seed, projectsCfg.seed);
     assert.notEqual(roadmapCfg.seed, contactCfg.seed);
     assert.ok(heroCfg.darkMaxOpacity > 0 && heroCfg.darkMaxOpacity <= 0.3);
     assert.ok(aboutCfg.darkMaxOpacity > 0 && aboutCfg.darkMaxOpacity <= 0.3);
+    assert.ok(pillarsCfg.darkMaxOpacity > 0 && pillarsCfg.darkMaxOpacity <= 0.3);
     assert.ok(stackCfg.darkMaxOpacity > 0 && stackCfg.darkMaxOpacity <= 0.3);
     assert.ok(contactCfg.lightMaxOpacity > 0 && contactCfg.lightMaxOpacity <= 0.2);
 });

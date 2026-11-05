@@ -49,6 +49,7 @@ export default async function LangLayout({
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
+            forcedTheme="dark"
             enableSystem={false}
           >
             <CustomCursor />

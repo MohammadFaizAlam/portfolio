@@ -21,18 +21,18 @@ export default function Contact() {
                 <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
 
                     <div className="flex flex-col gap-4 mb-16 lg:mb-32">
-                        <BlurReveal>
+                        <BlurReveal delay={0} yOffset={16}>
                             <span className="title-counter">
                                 [006]
                             </span>
                         </BlurReveal>
 
-                        <BlurReveal>
+                        <BlurReveal delay={0.07} yOffset={24}>
                             <h2 className="title">
                                 {dict.title.contact}
                             </h2>
                         </BlurReveal>
-                        <BlurReveal>
+                        <BlurReveal delay={0.14} yOffset={20}>
                             <p className="text-lg mt-3 max-w-xl italic font-medium tracking-tight text-foreground/60">
                                 {dict.contactIntroText}
                             </p>
@@ -41,7 +41,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex flex-col w-full max-w-5xl mx-auto mb-12 sm:mb-24 xl:mb-40 border-t border-border/50">
-                    <BlurReveal>
+                    <BlurReveal delay={0.08} yOffset={24} duration={0.62}>
                         <a
                             href={`mailto:${content.contact.email}`}
                             className="group flex flex-col md:flex-row md:items-center justify-between py-10 md:py-14 border-b border-border/50 transition-all duration-700 hover:px-8"
@@ -59,7 +59,7 @@ export default function Contact() {
                             </div>
                         </a>
                     </BlurReveal>
-                    <BlurReveal>
+                    <BlurReveal delay={0.16} yOffset={24} duration={0.62}>
                         <a
                             href={`tel:${sanitizePhone(content.contact.phone)}`}
                             className="group flex flex-col md:flex-row md:items-center justify-between py-10 md:py-14 border-b border-border/50 transition-all duration-700 hover:px-8"
@@ -81,15 +81,17 @@ export default function Contact() {
 
                 <div className="w-full flex flex-col md:flex-row items-center justify-between pb-12 xl:py-12 xl:border-t border-border/50 gap-8">
 
-                    <div className="text-sm font-mono tracking-widest text-muted-foreground uppercase flex items-center gap-4 max-xl:hidden">
-                        <span>© 2026</span>
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
-                        <span>Md. Faiz. {dict.allRightsReserved}</span>
-                    </div>
+                    <BlurReveal delay={0.1} yOffset={14}>
+                        <div className="text-sm font-mono tracking-widest text-muted-foreground uppercase flex items-center gap-4 max-xl:hidden">
+                            <span>© 2026</span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
+                            <span>Md. Faiz. {dict.allRightsReserved}</span>
+                        </div>
+                    </BlurReveal>
 
                     <div className="flex flex-wrap items-center justify-center gap-4">
-                        {content.social.map((link: { label: string; href: string }) => (
-                            <BlurReveal key={link.label}>
+                        {content.social.map((link: { label: string; href: string }, index: number) => (
+                            <BlurReveal key={link.label} delay={0.12 + index * 0.06} yOffset={16}>
                                 <ShineButton
                                     href={link.href}
                                     className="h-14 px-8"

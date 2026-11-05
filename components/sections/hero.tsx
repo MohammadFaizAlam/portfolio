@@ -137,22 +137,37 @@ export default function Hero() {
             >
                 <div className="w-full mt-auto flex flex-col justify-center relative z-20 mix-blend-difference">
                     <div className="overflow-hidden">
-                        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl 3xl:text-[140px] font-black tracking-tighter leading-[0.85] text-foreground uppercase whitespace-nowrap">
+                        <motion.h1
+                            initial={{ opacity: 0, y: 36 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+                            className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl 3xl:text-[140px] font-black tracking-tighter leading-[0.85] text-foreground uppercase whitespace-nowrap transform-gpu"
+                        >
                             Mohmd.
                             <br />
                             <span className="text-foreground/80">
                                 Faiz
                             </span>
-                        </h1>
+                        </motion.h1>
                     </div>
                 </div>
 
                 <div className="space-y-6 sm:space-y-8 xl:space-y-10">
-                    <p className="sm:text-lg 2xl:text-xl text-muted-foreground font-light leading-relaxed max-w-xl mix-blend-difference">
+                    <motion.p
+                        initial={{ opacity: 0, y: 22 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.65, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
+                        className="sm:text-lg 2xl:text-xl text-muted-foreground font-light leading-relaxed max-w-xl mix-blend-difference transform-gpu"
+                    >
                         <RichText>{content.about.description}</RichText>
-                    </p>
+                    </motion.p>
 
-                    <div className="flex flex-col sm:flex-row flex-wrap sm:items-center gap-4">
+                    <motion.div
+                        initial={{ opacity: 0, y: 18 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
+                        className="flex flex-col sm:flex-row flex-wrap sm:items-center gap-4 transform-gpu"
+                    >
                         <button
                             onClick={() => setContactOpen(true)}
                             className="w-fit group relative flex h-12 xl:h-16 cursor-pointer items-center justify-center overflow-hidden rounded-full border border-border/50 bg-foreground px-6 xl:px-10 text-background transition-all duration-500 ease-out hover:bg-background hover:border-foreground/30 hover:text-foreground shadow-2xl hover:-translate-y-0.5"
@@ -175,7 +190,7 @@ export default function Hero() {
                                 {dict.exploreProjects}
                             </span>
                         </button>
-                    </div>
+                    </motion.div>
                 </div>
 
             </motion.div>

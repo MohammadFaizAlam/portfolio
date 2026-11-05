@@ -4,8 +4,6 @@ import React, { useState, useEffect, useRef, useMemo, useCallback, useId } from 
 import Link from "next/link";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { Menu, X } from "lucide-react";
-// import LanguageSwitcher from "@/components/widgets/language-switcher";
-import ThemeSwitcher from "@/components/widgets/theme-switcher";
 import { useLanguage } from "@/providers/language-provider";
 import { useLenis } from "@/providers/smooth-scroll-provider";
 import { cn } from "@/lib/utils";
@@ -210,10 +208,6 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <div className="flex items-center gap-3">
-            {/* <LanguageSwitcher /> */}
-            <ThemeSwitcher />
-          </div>
         </div>
 
         <div className="flex xl:hidden items-center gap-4">
@@ -270,18 +264,6 @@ export default function Navbar() {
                   </motion.li>
                 ))}
               </ul>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-                className="mt-8 flex items-center justify-between"
-              >
-                <div className="flex items-center gap-4">
-                  {/* <LanguageSwitcher /> */}
-                  <ThemeSwitcher />
-                </div>
-              </motion.div>
             </div>
           </motion.div>
         )}

@@ -106,7 +106,14 @@ export function getAdjacentProjectIndices(currentIndex: number, totalProjects: n
     };
 }
 
-export type FluidShaderSectionVariant = "hero" | "about" | "stack" | "projects" | "roadmap" | "contact";
+export type FluidShaderSectionVariant =
+    | "hero"
+    | "about"
+    | "pillars"
+    | "stack"
+    | "projects"
+    | "roadmap"
+    | "contact";
 
 export interface FluidShaderConfig {
     seed: number;
@@ -149,6 +156,18 @@ export function getFluidShaderConfig(variant: FluidShaderSectionVariant): FluidS
                 darkMaxOpacity: 0.22,
                 lightMaxOpacity: 0.11,
                 centerOffset: [0.08, 0.0],
+            };
+        case "pillars":
+            return {
+                seed: 6.14,
+                rotationDeg: -26,
+                scale: 0.66,
+                swirl: 0.89,
+                distortion: 0.14,
+                speed: 0.21,
+                darkMaxOpacity: 0.23,
+                lightMaxOpacity: 0.11,
+                centerOffset: [0.04, -0.02],
             };
         case "stack":
             return {

@@ -112,19 +112,19 @@ export default function Projects() {
                 {!isDesktop ? (
                     <>
                         <div className="flex flex-col gap-4 px-container mb-10 sm:mb-12 relative z-10">
-                            <BlurReveal>
+                            <BlurReveal delay={0} yOffset={16}>
                                 <span className="title-counter">
                                     [004]
                                 </span>
                             </BlurReveal>
 
-                            <BlurReveal>
+                            <BlurReveal delay={0.07} yOffset={24}>
                                 <h2 className="title">
                                     {dict.title.projects}
                                 </h2>
                             </BlurReveal>
 
-                            <BlurReveal>
+                            <BlurReveal delay={0.14} yOffset={20}>
                                 <p className="mt-3 text-muted-foreground text-base sm:text-lg max-w-2xl">
                                     <RichText>{dict.projectsIntro}</RichText>
                                 </p>
@@ -152,27 +152,33 @@ export default function Projects() {
                         >
                             <div className="w-[60vw] xl:w-[38vw] shrink-0 flex flex-col justify-center pr-8">
                                 <div className="flex flex-col gap-4">
-                                    <BlurReveal>
+                                    <BlurReveal delay={0} yOffset={16}>
                                         <span className="title-counter">
                                             [004]
                                         </span>
                                     </BlurReveal>
 
-                                    <BlurReveal>
+                                    <BlurReveal delay={0.07} yOffset={24}>
                                         <h2 className="title">
                                             {dict.title.projects}
                                         </h2>
                                     </BlurReveal>
 
-                                    <BlurReveal>
+                                    <BlurReveal delay={0.14} yOffset={24} duration={0.64}>
                                         <p className="mt-4 text-4xl 2xl:text-5xl font-light leading-tight text-foreground/90">
                                             <RichText>{dict.projectsIntro}</RichText>
                                         </p>
                                     </BlurReveal>
 
-                                    <BlurReveal>
+                                    <BlurReveal delay={0.22} yOffset={16}>
                                         <div className="mt-10 flex items-center gap-4">
-                                            <div className="h-px w-20 bg-border" />
+                                            <motion.div
+                                                initial={{ scaleX: 0 }}
+                                                whileInView={{ scaleX: 1 }}
+                                                viewport={{ once: true }}
+                                                transition={{ duration: 0.7, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
+                                                className="h-px w-20 bg-border origin-left transform-gpu"
+                                            />
                                             <span className="text-xs font-mono tracking-[0.2em] text-foreground/50 uppercase">
                                                 {dict.projectsScrollText}
                                             </span>
@@ -199,9 +205,13 @@ export default function Projects() {
                         </motion.div>
 
                         {activeProject && (
-                            <div
+                            <motion.div
                                 aria-hidden="true"
-                                className="absolute bottom-8 left-0 right-0 px-container z-20 pointer-events-none flex items-center justify-end gap-6"
+                                initial={{ opacity: 0, y: 14 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.55, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                                className="absolute bottom-8 left-0 right-0 px-container z-20 pointer-events-none flex items-center justify-end gap-6 transform-gpu"
                             >
                                 <div className="flex items-center gap-3 text-xs font-mono tracking-[0.2em] uppercase">
                                     <span className="text-foreground font-semibold">
@@ -223,7 +233,7 @@ export default function Projects() {
                                         className="h-full w-full bg-foreground/85 origin-left transform-gpu"
                                     />
                                 </div>
-                            </div>
+                            </motion.div>
                         )}
                     </>
                 )}
@@ -255,7 +265,17 @@ const ProjectCard = React.memo(function ProjectCard({
     const stackPreview = project.stack?.slice(0, 3).join(" · ") ?? "";
 
     const cardContent = (
-        <div className="group relative w-full xl:w-[44vw] aspect-4/3 shrink-0 xl:mx-5 cursor-pointer transform-gpu">
+        <motion.div
+            initial={disableReveal ? { opacity: 0, y: 24, scale: 0.985 } : false}
+            whileInView={disableReveal ? { opacity: 1, y: 0, scale: 1 } : undefined}
+            viewport={disableReveal ? { once: true, amount: 0.1 } : undefined}
+            transition={
+                disableReveal
+                    ? { duration: 0.58, delay: Math.min(index * 0.06, 0.18), ease: [0.22, 1, 0.36, 1] }
+                    : undefined
+            }
+            className="group relative w-full xl:w-[44vw] aspect-4/3 shrink-0 xl:mx-5 cursor-pointer transform-gpu"
+        >
             <div className="relative w-full h-full overflow-hidden bg-muted/40 border border-border/50 transition-colors duration-500 ease-out group-hover:border-foreground/35 group-focus-within:border-foreground/35">
                 <div className="absolute inset-0 z-0 overflow-hidden">
                     <Image
@@ -312,12 +332,16 @@ const ProjectCard = React.memo(function ProjectCard({
                 aria-haspopup="dialog"
                 className="absolute inset-0 z-20 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
             />
-        </div>
+        </motion.div>
     );
 
     if (disableReveal) {
         return cardContent;
     }
 
-    return <BlurReveal>{cardContent}</BlurReveal>;
+    return (
+        <BlurReveal delay={(index % 2) * 0.08} yOffset={24}>
+            {cardContent}
+        </BlurReveal>
+    );
 });

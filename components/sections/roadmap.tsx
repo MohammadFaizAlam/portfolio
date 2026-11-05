@@ -42,19 +42,19 @@ export default function Roadmap() {
             <div className="container mx-auto px-container max-w-6xl relative z-10">
 
                 <div className="flex flex-col md:items-center mb-24 md:mb-40 gap-4 text-center">
-                    <BlurReveal>
+                    <BlurReveal delay={0} yOffset={16}>
                         <span className="title-counter">
                             [005]
                         </span>
                     </BlurReveal>
 
-                    <BlurReveal>
+                    <BlurReveal delay={0.07} yOffset={24}>
                         <h2 className="title">
                             {dict.title.roadmap}
                         </h2>
                     </BlurReveal>
 
-                    <BlurReveal>
+                    <BlurReveal delay={0.14} yOffset={20}>
                         <p className="text-lg mt-3 max-w-xl italic font-medium tracking-tight text-foreground/60">
                             {dict.roadmapDescription}
                         </p>
@@ -90,16 +90,22 @@ const TimelineNode = ({ item, isEven }: { item: RoadmapItem, isEven: boolean }) 
 
             <div className="w-[calc(50%-3rem)] hidden md:block" />
 
-            <div className="absolute left-6 md:left-1/2 -translate-x-1/2 w-8 h-8 md:w-10 md:h-10 rounded-full border border-border/50 bg-background z-20 flex items-center justify-center shadow-lg group-hover:border-primary/50 transition-colors duration-500">
+            <motion.div
+                initial={{ scale: 0.4, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                className="absolute left-6 md:left-1/2 -translate-x-1/2 w-8 h-8 md:w-10 md:h-10 rounded-full border border-border/50 bg-background z-20 flex items-center justify-center shadow-lg group-hover:border-primary/50 transition-colors duration-500 transform-gpu"
+            >
                 <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-primary shadow-[0_0_10px_rgba(var(--primary),0.8)]" />
-            </div>
+            </motion.div>
 
             <div
                 className={cn(
                     "w-full md:w-[calc(50%-3rem)] pl-16 md:pl-0 relative group",
                 )}
             >
-                <BlurReveal>
+                <BlurReveal yOffset={24} xOffset={isEven ? -18 : 18} duration={0.62}>
                     <div className={cn(
                         "relative p-8 md:p-10 border border-border/50 bg-secondary/5 backdrop-blur-md overflow-hidden transition-all duration-700 ease-out",
                         "hover:bg-secondary/20 hover:border-border hover:shadow-2xl",
