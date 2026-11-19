@@ -1,0 +1,426 @@
+{
+    "hero": {
+        "headline": "Engineering **resilient software**, scaling **paid acquisition**, and modeling **market structure** for measurable outcomes."
+    },
+    "about": {
+        "intro": "Where **systems engineering** meets **measurable growth**.",
+        "description": "What begins as first-principles curiosity becomes shipped software, audited acquisition funnels, and disciplined trading systems. Engineering enforces *rigor*, markets teach *risk control*, and distribution demands *proof*.",
+        "proofMetrics": [
+            {
+                "value": "89K+",
+                "label": "Users Analyzed",
+                "context": "28-day GA4 telemetry"
+            },
+            {
+                "value": "1.3M+",
+                "label": "Tracked Events",
+                "context": "Full-funnel attribution"
+            },
+            {
+                "value": "6m 44s",
+                "label": "Avg. Engagement",
+                "context": "Verified retention"
+            },
+            {
+                "value": "03",
+                "label": "Core Disciplines",
+                "context": "Code · Capital · Growth"
+            }
+        ],
+        "full": "Hi, I'm **Mohammed Faiz Alam**—a developer, agency founder, and swing trader based in Mumbai who learns by building real systems and measuring their results in the wild.\n\nOn the **engineering** side, I work primarily with *React*, *Next.js*, *TypeScript*, *Node.js*, and *Python (FastAPI)*—shipping interactive simulators, quantitative research tools, and zero-CLS storefronts, backed by systems fundamentals in *C* and *MySQL*.\n\nOn the **growth** side, I run **AgencyGrow**, managing full-funnel *Google and Meta Ads* campaigns for clients in the UK and beyond—focused on high-intent search capture, clean GA4 event attribution, and disciplined cost-per-lead optimization.\n\nIn **financial markets**, I study swing structure through *Volume Profile* (POC, VAH, VAL, HVN/LVN), liquidity sweeps, and risk-penalized reinforcement learning environments.\n\nI'm currently pursuing my **B.Tech in Computer Engineering at Shree L.R. Tiwari College of Engineering**, continuing to ship software, grow client revenue, and refine quantitative models."
+    },
+    "manifesto": [
+        "SYSTEMS OVER HYPE",
+        "CODE · CAPITAL · DISTRIBUTION",
+        "QUANTIFIED EXECUTION",
+        "ARCHITECTURAL INTEGRITY",
+        "FIRST-PRINCIPLES ENGINEERING",
+        "MEASURABLE OUTCOMES"
+    ],
+    "pillars": [
+        {
+            "id": "systems-engineering",
+            "index": "01",
+            "subsystem": "01 / Code",
+            "title": "Systems Engineering",
+            "subtitle": "Software Architecture",
+            "description": "Shipping resilient web applications and real-time scientific simulators with **Next.js**, **TypeScript**, and **Python FastAPI**.",
+            "metrics": [
+                {
+                    "label": "Core Stack",
+                    "value": "React · Next.js · Python"
+                },
+                {
+                    "label": "Standard",
+                    "value": "Zero-CLS · Type-Safe"
+                },
+                {
+                    "label": "Simulations",
+                    "value": "BB84 Quantum · RL Env"
+                },
+                {
+                    "label": "Degree",
+                    "value": "B.Tech Computer Eng."
+                }
+            ],
+            "facets": [
+                {
+                    "id": "frontend-architecture",
+                    "label": "Interface",
+                    "summary": "Zero-CLS App Router layouts paired with GPU-composited spring choreography and bespoke 2D canvas engines.",
+                    "proof": "Deployed across Nuvora & production web systems"
+                },
+                {
+                    "id": "simulation-backends",
+                    "label": "Simulations",
+                    "summary": "Real-time Python & FastAPI compute pipelines modeling quantum eavesdropping (QBER) and reinforcement learning episodes.",
+                    "proof": "Powers BB84 Quantum & RL Trading Env"
+                },
+                {
+                    "id": "systems-foundations",
+                    "label": "Foundations",
+                    "summary": "Low-level memory fundamentals in C alongside relational MySQL schemas and strict TypeScript API contracts.",
+                    "proof": "Engineered for deterministic execution"
+                }
+            ],
+            "tags": [
+                "Next.js",
+                "TypeScript",
+                "Python",
+                "FastAPI"
+            ]
+        },
+        {
+            "id": "market-mechanics",
+            "index": "02",
+            "subsystem": "02 / Capital",
+            "title": "Market Mechanics",
+            "subtitle": "Swing Trading & Structure",
+            "description": "Decoding institutional participation through **price action** and **Volume Profile**, stress-tested inside custom reinforcement learning environments.",
+            "metrics": [
+                {
+                    "label": "Methodology",
+                    "value": "Volume Profile · Price Action"
+                },
+                {
+                    "label": "Key Levels",
+                    "value": "POC · VAH · VAL · HVN"
+                },
+                {
+                    "label": "Quantitative",
+                    "value": "Gymnasium PPO Agents"
+                },
+                {
+                    "label": "Risk Rule",
+                    "value": "Fixed Sizing · Confirmation"
+                }
+            ],
+            "facets": [
+                {
+                    "id": "volume-profile",
+                    "label": "Volume Profile",
+                    "summary": "Mapping Point of Control (POC), Value Area boundaries, and low-volume rejection nodes where real order flow clusters.",
+                    "proof": "Systematic swing setups anchored on structural acceptance"
+                },
+                {
+                    "id": "liquidity-structure",
+                    "label": "Risk & Liquidity",
+                    "summary": "Tracking liquidity sweeps across key highs and lows with predefined invalidation levels and strict position sizing.",
+                    "proof": "Mechanical execution with disciplined drawdown limits"
+                },
+                {
+                    "id": "rl-workbench",
+                    "label": "RL Workbench",
+                    "summary": "Custom Gymnasium environment training autonomous PPO agents on OHLCV series with drawdown-penalized reward shaping.",
+                    "proof": "Live equity curve & trade-by-trade execution blotter"
+                }
+            ],
+            "tags": [
+                "Volume Profile",
+                "Price Action",
+                "POC / VAH / VAL",
+                "Gymnasium PPO"
+            ]
+        },
+        {
+            "id": "growth-advertising",
+            "index": "03",
+            "subsystem": "03 / Attention",
+            "title": "Growth & Advertising",
+            "subtitle": "AgencyGrow · Paid Acquisition",
+            "description": "Founder of **AgencyGrow**. Turning cold traffic into qualified pipeline via **Google & Meta Ads** backed by granular *GA4 conversion attribution*.",
+            "metrics": [
+                {
+                    "label": "Ventures",
+                    "value": "AgencyGrow · Nuvora"
+                },
+                {
+                    "label": "Channels",
+                    "value": "Google Ads · Meta · GA4"
+                },
+                {
+                    "label": "Analyzed Reach",
+                    "value": "89K+ Users · 1.3M Events"
+                },
+                {
+                    "label": "Engagement",
+                    "value": "6m 44s Avg. Session"
+                }
+            ],
+            "facets": [
+                {
+                    "id": "search-intent",
+                    "label": "Paid Campaigns",
+                    "summary": "High-intent Google Search and Meta acquisition funnels structured around negative keyword hygiene and CPL efficiency.",
+                    "proof": "UK & international client acquisition built for ROI discipline"
+                },
+                {
+                    "id": "telemetry-analytics",
+                    "label": "GA4 Telemetry",
+                    "summary": "End-to-end event instrumentation tracking 1.3M+ interactions, channel attribution, and drop-off diagnostics.",
+                    "proof": "89K active users analyzed over 28-day windows"
+                },
+                {
+                    "id": "conversion-design",
+                    "label": "Storefronts",
+                    "summary": "Pairing paid traffic with high-speed landing systems (Nuvora) engineered to convert cold clicks into booked calls.",
+                    "proof": "Zero layout shift & high-clarity service positioning"
+                }
+            ],
+            "tags": [
+                "AgencyGrow",
+                "Google Ads",
+                "Meta Ads",
+                "GA4 Telemetry"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "title": "BB84 Quantum",
+            "category": "Quantum Simulation",
+            "track": "engineering",
+            "year": "2026",
+            "impact": "Real-time QBER eavesdropper detection & One-Time Pad encryption",
+            "role": "Full-Stack & Simulation Architect",
+            "challenge": "Quantum cryptography concepts like basis mismatch and eavesdropper disturbance are notoriously abstract in textbooks, making protocol mechanics difficult to verify intuitively.",
+            "architecture": "Engineered a React + TypeScript interactive visual pipeline connected to a Python FastAPI quantum state engine that simulates photon preparation, basis sifting, Eve interception, and real-time QBER threshold detection.",
+            "outcome": "Delivered a step-by-step live simulator that flags channel compromise instantaneously and demonstrates end-to-end One-Time Pad message encryption.",
+            "highlights": [
+                { "label": "Protocol", "value": "BB84 + OTP" },
+                { "label": "Detection", "value": "Live QBER" },
+                { "label": "Engine", "value": "FastAPI + React" }
+            ],
+            "description": "An interactive **BB84 Quantum Key Distribution** simulator showing how quantum physics secures key exchange and catches eavesdroppers. Users step through state preparation, basis selection, key sifting, and *One-Time Pad* encryption in real time.\n\nBuilt with a *React* and *TypeScript* frontend and a *Python FastAPI* engine, it calculates **Quantum Bit Error Rate (QBER)** to flag interception attempts the moment a third party measures the channel.",
+            "image": "/projects/20260427093247885.jpg",
+            "repo": "https://github.com/MohammadFaizAlam/faiz-quantum-communication",
+            "stack": [
+                "React",
+                "TypeScript",
+                "Python",
+                "FastAPI",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Nuvora",
+            "category": "Agency Platform",
+            "track": "engineering",
+            "year": "2026",
+            "impact": "Zero-CLS editorial storefront built to convert cold traffic into booked calls",
+            "role": "Founder, Designer & Lead Engineer",
+            "challenge": "Most creative agencies lose cold paid traffic to generic templates that fail to signal authority or guide prospects smoothly toward booking a discovery call.",
+            "architecture": "Built with Next.js, React, and TypeScript, combining editorial typography with GPU-accelerated Framer Motion and GSAP choreography while preserving fast first paint and zero layout shift.",
+            "outcome": "Launched a high-trust digital storefront aligning brand authority directly with AgencyGrow's paid acquisition funnels.",
+            "highlights": [
+                { "label": "Role", "value": "Founder & Dev" },
+                { "label": "Performance", "value": "Zero-CLS UI" },
+                { "label": "Stack", "value": "Next.js + GSAP" }
+            ],
+            "description": "Nuvora is the digital storefront and client acquisition platform for my creative and advertising startup. Designed to turn cold traffic into booked discovery calls, it pairs bold editorial typography with interactive case-study storytelling and clear service positioning.\n\nEngineered with *Next.js*, *React*, and *TypeScript*, the interface uses *Framer Motion*, *GSAP*, and *Locomotive Scroll* for fluid scroll choreography while keeping layout shifts zero and page loads fast across devices.",
+            "image": "/projects/20260427093247620.jpg",
+            "demo": "https://nuvora-media.vercel.app/",
+            "repo": "https://github.com/MohammadFaizAlam/Nuvora",
+            "stack": [
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Framer Motion",
+                "GSAP"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "RL Trading Env",
+            "category": "Quantitative AI",
+            "track": "engineering",
+            "year": "2025",
+            "impact": "Risk-penalized PPO agent workbench with live equity & drawdown blotter",
+            "role": "Quantitative Systems Developer",
+            "challenge": "Naive reinforcement learning trading models overfit raw returns while taking reckless leverage and unrecoverable drawdowns.",
+            "architecture": "Built a custom Gymnasium environment with a drawdown-penalized reward function, streaming Python FastAPI PPO training telemetry into a React + TypeScript cockpit displaying OHLCV candles, equity curves, and trade blotters.",
+            "outcome": "Created a repeatable quantitative research workbench to evaluate agent stability, sizing discipline, and risk-adjusted performance across market regimes.",
+            "highlights": [
+                { "label": "Algorithm", "value": "PPO (Gymnasium)" },
+                { "label": "Reward", "value": "Drawdown-Aware" },
+                { "label": "Telemetry", "value": "Live Blotter" }
+            ],
+            "description": "RL Trading Env is a full reinforcement learning workbench for training and evaluating autonomous trading agents against historical and synthetic *OHLCV* market data. Instead of optimizing for raw return alone, its custom *Gymnasium* environment scores agents with a risk-aware reward function that penalizes deep drawdowns and erratic sizing.\n\nThe *Python* and *FastAPI* backend runs **Proximal Policy Optimization (PPO)** episodes and streams execution logs to a *React* and *TypeScript* dashboard featuring live price charts, equity curves, drawdown metrics, and trade-by-trade blotters.",
+            "image": "/projects/20260305210513749.jpg",
+            "repo": "https://github.com/MohammadFaizAlam/rl-trading-env",
+            "stack": [
+                "Python",
+                "FastAPI",
+                "React",
+                "TypeScript",
+                "Gymnasium"
+            ]
+        },
+        {
+            "id": "4",
+            "title": "UK Roofing Ads",
+            "category": "Paid Acquisition",
+            "track": "growth",
+            "year": "2025",
+            "impact": "High-intent UK Google Search campaigns engineered for lower CPL",
+            "role": "Performance Strategist · AgencyGrow",
+            "challenge": "Local home-service search auctions in the UK suffer from wasted spend on broad informational queries and weak lead attribution.",
+            "architecture": "Structured tight intent-segmented Google Ads ad groups with strict negative keyword hygiene, hyper-local geo-fencing, and verified conversion tracking across calls and forms.",
+            "outcome": "Improved lead quality and budget efficiency through ongoing search-term pruning, bid adjustments, and transparent CPL reporting.",
+            "highlights": [
+                { "label": "Market", "value": "United Kingdom" },
+                { "label": "Channel", "value": "Google Search" },
+                { "label": "Focus", "value": "CPL & Intent" }
+            ],
+            "description": "Managed Google Ads campaigns for a **UK-based roofing business**, focused on turning search intent into qualified enquiries. Campaigns were structured around high-intent roofing keywords, location targeting, and carefully managed budgets to reach customers actively looking for roofing services.\n\nPerformance was monitored through **conversion tracking, cost per lead (CPL), click-through rate (CTR), conversion rate, and total ad spend**. Continuous keyword refinement, search term analysis, and bid optimisation helped improve campaign efficiency and make every advertising pound count.",
+            "image": "/projects/project-4.jpg",
+            "repo": "",
+            "stack": [
+                "Google Ads",
+                "GA4 Attribution",
+                "Conversion Tracking",
+                "Keyword Hygiene",
+                "Bid Optimization"
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Audience Analytics",
+            "category": "Growth Telemetry",
+            "track": "growth",
+            "year": "2026",
+            "impact": "89K active users & 1.3M behavioral events audited over 28 days",
+            "role": "Analytics & Funnel Lead",
+            "challenge": "High-volume web properties often collect raw traffic numbers without understanding which acquisition cohorts and pages actually drive sustained interaction.",
+            "architecture": "Audited GA4 event pipelines across 89K active users (80K new users) and 1.3M interactions, isolating landing-page retention, bounce anomalies, and channel distribution.",
+            "outcome": "Surfaced actionable conversion bottlenecks and high-leverage pages to guide content and acquisition spend allocation.",
+            "highlights": [
+                { "label": "Active Users", "value": "89K (28d)" },
+                { "label": "New Users", "value": "80K Acquired" },
+                { "label": "Event Volume", "value": "1.3M Events" }
+            ],
+            "description": "Analysed website traffic and audience behaviour over a 28-day period, recording **89K active users** and **80K new users**. The property generated **1.3M events**, providing a broader view of how visitors interacted with the website.\n\nTracked key performance indicators including page views, active users, and bounce rates to understand traffic distribution, identify high-performing pages, and evaluate overall audience engagement.",
+            "image": "/projects/project-5.png",
+            "repo": "",
+            "stack": [
+                "Google Analytics 4",
+                "Event Telemetry",
+                "Cohort Analysis",
+                "Funnel Diagnostics"
+            ]
+        },
+        {
+            "id": "6",
+            "title": "User Engagement",
+            "category": "Retention Intelligence",
+            "track": "growth",
+            "year": "2026",
+            "impact": "6m 44s average engagement time across 32K active users",
+            "role": "Growth & Retention Analyst",
+            "challenge": "Traffic spikes mean little if visitors drop off within seconds; distinguishing deep product engagement from hollow clicks requires cohort-level telemetry.",
+            "architecture": "Monitored daily retention curves, real-time behavioral flows, and geographic concentration across 32K active users and 15K new users over a 28-day window.",
+            "outcome": "Validated strong product-audience stickiness at 6m 44s average active engagement, identifying top-performing regions for targeted expansion.",
+            "highlights": [
+                { "label": "Avg. Session", "value": "6m 44s" },
+                { "label": "Active Users", "value": "32K (28d)" },
+                { "label": "New Cohort", "value": "15K Users" }
+            ],
+            "description": "Evaluated audience activity across a 28-day period, recording **32K active users** and **15K new users**, with an average engagement time of **6 minutes 44 seconds** per active user.\n\nMonitored daily traffic trends, geographic distribution, and real-time activity to understand how users interacted with the platform. These insights helped build a clearer picture of audience behaviour, acquisition patterns, and engagement quality.",
+            "image": "/projects/project-6.png",
+            "repo": "",
+            "stack": [
+                "Google Analytics 4",
+                "Retention Cohorts",
+                "Geo Distribution",
+                "Real-time Telemetry"
+            ]
+        }
+    ],
+    "roadmap": [
+        {
+            "id": "01",
+            "year": "2022",
+            "title": "First Principles of the Web",
+            "subtitle": "Self-Taught Foundations",
+            "description": "Started from zero with HTML, CSS, and JavaScript—dissecting how interfaces render, respond, and turn static documents into interactive software.",
+            "stack": [
+                "HTML5",
+                "CSS3",
+                "JavaScript"
+            ]
+        },
+        {
+            "id": "02",
+            "year": "2023",
+            "title": "Founded AgencyGrow & Entered Markets",
+            "subtitle": "Entrepreneurship · Paid Media · Price Action",
+            "description": "Launched AgencyGrow to manage full-funnel Google and Meta ad campaigns while simultaneously studying swing trading, Volume Profile, and liquidity structure.",
+            "stack": [
+                "AgencyGrow",
+                "Google Ads",
+                "Meta Ads",
+                "Volume Profile"
+            ]
+        },
+        {
+            "id": "03",
+            "year": "2024",
+            "title": "CBSE Class 10 (SSC) — Raigad Military School",
+            "subtitle": "Discipline & Technical Momentum",
+            "description": "Completed secondary schooling at Raigad Military School, pairing structured discipline with independent evenings building software and testing market hypotheses.",
+            "stack": [
+                "Raigad Military School",
+                "CBSE SSC",
+                "Systems Thinking"
+            ]
+        },
+        {
+            "id": "04",
+            "year": "2026",
+            "title": "CBSE Class 12 (HSC) — Rajhans Vidyalaya",
+            "subtitle": "Andheri, Mumbai · Pre-Engineering",
+            "description": "Completed higher secondary education in Andheri while scaling real client analytics pipelines and shipping full-stack simulation platforms.",
+            "stack": [
+                "Rajhans Vidyalaya",
+                "CBSE HSC",
+                "Full-Stack"
+            ]
+        },
+        {
+            "id": "05",
+            "year": "PRESENT",
+            "title": "B.Tech Computer Engineering — SLRTCE",
+            "subtitle": "Shree L.R. Tiwari College of Engineering",
+            "current": true,
+            "description": "Pursuing Computer Engineering while building quantitative simulators (BB84, RL Trading), scaling AgencyGrow & Nuvora, and refining systematic trading models.",
+            "stack": [
+                "Computer Engineering",
+                "SLRTCE",
+                "AgencyGrow",
+                "Quantitative AI"
+            ]
+        }
+    ]
+}
